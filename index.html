@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><!-- character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- responsive scaling -->
+  <title>GIF Gala RSVP</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main class="container">
+    <!-- Invitation Header -->
+    <header class="invitation">
+      <h1>You're Invited to the GIF Gala: Where Memes Come to Life!</h1>
+      <h2>7/21/23</h2>
+      <p class="description">
+        Join us for an unforgettable evening where the internet’s most iconic GIFs 
+        and memes step off the screen and onto the dance floor. Costumes, laughter, 
+        and good vibes guaranteed!
+      </p>
+    </header>
+
+    <!-- RSVP Form -->
+    <section class="rsvp">
+      <h3>RSVP Now</h3>
+      <form id="rsvpForm">
+        <!-- Email Field -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Attendance Field -->
+        <label for="attendance">Will you be attending?</label>
+        <select id="attendance" name="attendance" required>
+          <option value="">-- Select an option --</option>
+          <option value="yes">Yes, I’ll be there 🎉</option>
+          <option value="no">No, maybe next time 🙁</option>
+        </select>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit RSVP</button>
+      </form>
+
+      <!-- Confirmation Message -->
+      <div id="confirmationMessage" class="confirmation">
+        <!-- JavaScript will insert a message here after form submission -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Link to external JavaScript file -->
+  <script src="index.js"></script>
+</body>
+</html>
